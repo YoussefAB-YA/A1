@@ -1,0 +1,27 @@
+What is the difference between forEach and for...of? When would you use each?
+forEach: Array method, cannot break/return early, works only on arrays.
+for...of: Loop over any iterable (arrays, strings, maps),can break, continue, or return.
+forEach for arry operations; for of when you need work with other iterables.
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+What is hoisting and what is the Temporal Dead Zone (TDZ)? Explain with examples.
+Hoisting happen for all Js Keyword Decleration(var,let,const)
+but there is some difference in var hoisting happen and when it move the declare to the top it initialize it with undifined
+in const and let hoisting happen but when come to the usage of the variable it say it exist but cant acess it before initialization what it called TDZ Mode
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+What are the main differences between == and ===?
+== : Compare the value if there is different type will do autocasting then compare the value like for example:
+2=="2"--> true it will autoCast the string to number and compare 
+===:Compare the value and the type there is noAutoCasting for example:
+2==="2" --> false it the same value but different in type
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+Explain how try-catch works and why it is important in async operations.
+try-catch handles errors without crashing the program and it is Important for async code to catch rejected promises.
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+What’s the difference between type conversion and coercion? Provide examples of each.
+Conversion: is done on purpose
+Number("123")---> 123
+String(123)-->"123"
+Coercion:JS automatically converts types
+"5" * 2 --> will convert 5 to number and will be final result 10
+"5" + 2  "52" ---> will convert 2 to string and concat with 5 to be 52
+
