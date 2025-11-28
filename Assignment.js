@@ -28,12 +28,18 @@ function range(rangeNum){
 range(rangee)
 //--------------------------------------------
 const numbers=[1,2,3,4,5]
-const evenNumbers=numbers.filter(num=>num%2==0)
-console.log(evenNumbers);
+function checkEven(num){
+const evenNumbers=num.filter(num=>num%2==0)
+return evenNumbers;
+}
+console.log(checkEven(numbers));
 //--------------------------------------------
 const arr1=[1,2,3]
 const arr2=[4,5,6]
-console.log([...arr1,...arr2]);
+function merge(array1,array2){
+console.log([...array1,...array2]);
+}
+merge(arr1,arr2)
 //--------------------------------------------
 let numbber=2
 function calender(day){
