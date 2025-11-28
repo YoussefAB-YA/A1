@@ -36,7 +36,8 @@ const arr2=[4,5,6]
 console.log([...arr1,...arr2]);
 //--------------------------------------------
 let numbber=2
-switch (numbber) {
+function calender(day){
+    switch (day) {
     case 1:
         console.log("Sunday");
         break;
@@ -64,29 +65,41 @@ switch (numbber) {
         break;
 }
 
+}
+calender(numbber)
 
 //--------------------------------------------
 let arr=["a","ab","abc"]
-const len=arr.map(function (checkLength){
+function lenghtCalc(array){
+const len=array.map(function (checkLength){
     return checkLength.length
 })
-console.log(len);
+return len
+}
+
+console.log(lenghtCalc(arr));
 //--------------------------------------------
 let numbeer=10;
-if (numbeer%3==0&&numbeer%5==0) {
+function check(num){
+    if (num%3==0&&num%5==0) {
     console.log("Divisible by Both");
 }
 else{
     console.log("Not Divisible by Both"); 
 }
-
+}
+check(numbeer)
 //--------------------------------------------
 let numberr=5;
 const square=num=>num**2;
 console.log("The Square Value:",square(numberr));
 //--------------------------------------------
 const person={name:"John",age:25}
-console.log(person.name,"is",person.age,"Years Old");
+function identify(per){
+console.log(per.name,"is",per.age,"Years Old");
+
+}
+identify(person)
 
 //--------------------------------------------
 function sum(...n) {
