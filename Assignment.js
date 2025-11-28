@@ -1,23 +1,31 @@
 let stNumber="123";
-console.log(parseInt(stNumber)+7);
+const transformNumber=(num)=>console.log(parseInt(num)+7);
+transformNumber(stNumber)
 //--------------------------------------------
 let number=0;
-if(!number){
+function validation(num){
+    if(!num){
     console.log("Invalid");
 }
 else{
     console.log("Valid");
     
 }
+}
+validation(number)
 //--------------------------------------------
-for(let i=1;i<=10;i++){
-if (i%2==0) {
+let rangee=10
+function range(rangeNum){
+    for(let i=1;i<=rangeNum;i++){
+    if (i%2==0) {
         continue;        
 }
-else{
+    else{
     console.log(i);
 }
 }
+}
+range(rangee)
 //--------------------------------------------
 const numbers=[1,2,3,4,5]
 const evenNumbers=numbers.filter(num=>num%2==0)
